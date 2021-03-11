@@ -5,7 +5,8 @@ const HALF_LIFE_PERIOD= 5730;
 
 module.exports = function dateSample(sampleActivity) {
   if(typeof sampleActivity != String ||
-typeof sampleActivity == undefined) {
+    typeof sampleActivity == undefined ||
+    typeof sampleActivity == null) {
     return false;
 }
 
